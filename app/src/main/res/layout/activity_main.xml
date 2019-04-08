@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/activity_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Ekle A"
+            android:onClick="addFragmentA"/>
+
+        <Button
+            android:id="@+id/remove_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Çıkar A"
+            android:onClick="removeFragmentA"/>
+
+        <Button
+            android:id="@+id/add_b_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Ekle B"
+            android:onClick="addFragmentB"/>
+
+        <Button
+            android:id="@+id/remove_b_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Çıkar B"
+            android:onClick="removeFragmentB"/>
+
+        <Button
+            android:id="@+id/change_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="A ile Değiş"
+            android:onClick="replaceByFragmentA"/>
+
+        <Button
+            android:id="@+id/change_b_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="B ile Değiş"
+            android:onClick="replaceByFragmentB"/>
+
+        <Button
+            android:id="@+id/attach_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Attach A"
+            android:onClick="attachFragmentA"/>
+
+        <Button
+            android:id="@+id/detach_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Detach A"
+            android:onClick="detachFragmentA"/>
+
+        <Button
+            android:id="@+id/show_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Show A"
+            android:onClick="showFragmentA"/>
+
+        <Button
+            android:id="@+id/hide_a_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Hide A"
+            android:onClick="hideFragmentA"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:animateLayoutChanges="true"
+        android:padding="8dp">
+    </FrameLayout>
+
+</LinearLayout>
